@@ -1,0 +1,162 @@
+/* Container styles */
+.products-container {
+    color: #322625; /* Black */
+    font-family: 'Neutra Text Alt', sans-serif;
+}
+
+/* Ensure table container has overflow for horizontal scrolling on small screens */
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+/* Table styles */
+.table {
+    background-color: #ffffff; /* White */
+    color: #322625; /* Black */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Remove Bootstrap's striped table background */
+.table tbody tr:nth-of-type(odd) {
+    background-color: #ffffff; /* White */
+}
+
+/* Header styles */
+.table thead th {
+    background-color: #c0e3e5; /* Blue */
+    color: #322625; /* Black */
+    padding: 8px;
+    text-align: left;
+}
+
+/* Table cell styles */
+.table th, .table td {
+    vertical-align: middle;
+    padding: 8px;
+    border: 1px solid #ebebeb; /* Grey */
+}
+
+/* Row styles */
+.table tbody tr {
+    background-color: #ffffff; /* White */
+}
+
+/* Row hover color */
+.table tbody tr:hover {
+    background-color: #ebebeb; /* Grey */
+}
+
+/* Button styles */
+.btn-outline-dark {
+    color: #322625; /* Black */
+    border-color: #322625; /* Black */
+}
+
+.btn-outline-dark:hover {
+    background-color: #322625; /* Black */
+    color: #ebebeb; /* Grey */
+}
+
+.btn-primary {
+    background-color: #322625; /* Black */
+    border-color: #322625; /* Black */
+}
+
+.btn-primary:hover {
+    background-color: #fdc936; /* Yellow */
+    border-color: #fdc936; /* Yellow */
+}
+
+/* Search input container styles */
+.search-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input-container input {
+    width: 200px;
+}
+
+.search-input-container button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: none;
+    background: transparent;
+}
+
+/* Filters dropdown styles */
+.dropdown-menu {
+    min-width: 100px;
+}
+
+/* Pagination styles */
+.pagination {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.pagination .btn {
+    min-width: 40px;
+    text-align: center;
+}
+
+.pagination .btn-primary {
+    background-color: #322625; /* Black */
+    border-color: #322625; /* Black */
+}
+
+.pagination .btn-outline-dark {
+    color: #322625; /* Black */
+    border-color: #322625; /* Black */
+}
+
+.filter-input {
+    min-width: 200px; /* Ensure all inputs have a minimum width */
+    border: 1px solid #322625; /* Set a consistent border color */
+    border-radius: 4px; /* Consistent border radius */
+    padding: 0.375rem 0.75rem; /* Consistent padding */
+  }
+  
+  /* Optional: Add some margin to the right of inputs except the last one */
+  .filters .form-control:not(:last-child) {
+    margin-right: 1rem; /* Adjust as needed */
+  }
+  
+  /* Style the select dropdown */
+  .filter-input {
+    appearance: none; /* Remove default styling for cross-browser consistency */
+    background-color: #fff; /* Set a consistent background */
+  }
+  
+  /* Optional: Add a focus style */
+  .filter-input:focus {
+    border-color: #c0e3e5; /* Focus border color */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0.2rem rgba(192, 227, 229, 0.5); /* Optional focus shadow */
+  }
+  
+  
+  /* src/Products.css */
+@media (max-width: 768px) {
+    .products-container {
+      padding: 15px; /* Add some padding */
+    }
+  
+    .table {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  
+    .filters {
+      flex-direction: column; /* Stack filters vertically on smaller screens */
+    }
+  
+    .filters > div {
+      margin-bottom: 10px; /* Add space between stacked items */
+    }
+  }
+  

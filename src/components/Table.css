@@ -1,0 +1,14 @@
+/* src/components/Table.css */
+.table-responsive {
+    overflow-x: auto; /* Enables horizontal scrolling */
+  }
+  
+  .table {
+    width: 100%; /* Optional: make the table full width */
+    border-collapse: collapse; /* Ensures there are no gaps between table cells */
+  }
+  
+  .table th, .table td {
+    white-space: nowrap; /* Prevents text from wrapping, keeping it in a single line */
+  }
+  
