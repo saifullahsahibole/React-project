@@ -18,10 +18,10 @@ This is a React application that showcases a users and products management inter
 ## Installation
 
 1. Clone the repository:
-   git clone <your-repo-url>
+   git clone https://github.com/saifullahsahibole/React-project.git
 
 2. Navigate to the project directory:
-   cd your-project-name
+   cd React-project
 
 3. Install the dependencies:
    npm install
